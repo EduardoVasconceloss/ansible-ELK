@@ -1,0 +1,3 @@
+---
+# tasks file for setup_ELK
+- include: print_passwords.yml

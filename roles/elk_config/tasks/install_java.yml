@@ -1,0 +1,14 @@
+---
+- name: install jre
+  apt:
+    name: default-jre
+    state: present
+    update_cache: yes
+  when: ansible_os_family == 'Debian'  
+
+- name: install jdk
+  apt:
+    name: default-jdk  
+    state: present
+    update_cache: yes
+  when: ansible_os_family == 'Debian'
